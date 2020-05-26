@@ -1,4 +1,4 @@
-from doubly_linked_list import DoublyLinkedList
+from ..doubly_linked_list.doubly_linked_list import DoublyLinkedList
 
 """
 A stack is a data structure whose primary purpose is to store and
