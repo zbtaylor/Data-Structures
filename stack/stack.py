@@ -1,4 +1,4 @@
-from ..doubly_linked_list.doubly_linked_list import DoublyLinkedList
+from doubly_linked_list import DoublyLinkedList
 
 """
 A stack is a data structure whose primary purpose is to store and
@@ -24,9 +24,9 @@ class Stack:
 
     def push(self, value):
         self.size += 1
-        self.storage.append(value)
+        self.storage.add_to_tail(value)
 
     def pop(self):
         if self.size > 0:
             self.size -= 1
-            return self.storage.pop()
+            return self.storage.remove_from_tail()
